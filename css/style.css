@@ -1,3 +1,22 @@
+* {
+  transition: 0.2s;
+}
+
 body {
   background-color: #f0f0f0;
+}
+body .main-wrapper {
+  width: 900px;
+  height: auto;
+}
+body .main-wrapper .svg-wrapper {
+  width: 100%;
+  height: auto;
+}
+body .main-wrapper .svg-wrapper svg {
+  width: 100%;
+  height: auto;
+}
+body .main-wrapper .svg-wrapper svg a:hover path {
+  fill: black;
 }/*# sourceMappingURL=style.css.map */

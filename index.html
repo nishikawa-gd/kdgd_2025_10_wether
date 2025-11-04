@@ -1,69 +1,425 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <title>日本の天気予報</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
-  
+
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   <script src="js/settings.js"></script>
   <script src="js/function.js"></script>
-  
+
 </head>
+
 <body class="home">
   <h1>日本の天気予報</h1>
   <div>
-    <img src="japan-map.png" alt="日本地図で各都道府県を選択したらページ移動できるようにする">
+    <!-- <img src="japan-map.png" alt="日本地図で各都道府県を選択したらページ移動できるようにする"> -->
   </div>
+
+
+  <!-- 地図 -->
+  <div class="main-wrapper">
+    <div class="svg-wrapper">
+      <svg width="1000" height="842" viewBox="0 0 1000 842" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+        <!-- 愛知 -->
+        <a href="pref.html?pref=愛知">
+          <path class="aichi"
+            d="M453.079 673.165L467.826 691.769L468.59 681.661L483.638 682.712L475.239 693.988L481.45 700.553L494.133 693.649L516.666 659.676L501.18 651.434L473.403 656.054L459.27 648.171L446.77 667.546L453.079 673.165Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 茨城 -->
+        <a href="pref.html?pref=茨城">
+          <path class="ibaraki"
+            d="M706.695 571.854L681.668 547.317L675.372 580.983L642.076 608.176L652.513 620.607L674.438 632.725L700.562 627.596L720.162 641.58L705.696 603.36L706.695 571.854Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 千葉 -->
+        <a href="pref.html?pref=千葉">
+          <path class="chiba"
+            d="M652.513 620.607L655.315 643.917L669.775 653.705C669.775 653.705 649.711 673.054 650.181 674.215C650.645 675.383 650.175 709.643 650.175 709.643L669.775 695.195L687.971 691.932L693.568 663.03L707.564 648.113L720.162 641.587L700.569 627.602L674.445 632.732L652.52 620.613L652.513 620.607Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 埼玉 -->
+        <a href="pref.html?pref=埼玉">
+          <path class="saitama"
+            d="M642.076 608.176L628.139 611.438L608.128 605.879L595.124 613.148L583.825 615.595L585.85 621.71L601.048 628.327L626.852 637.384H654.525L652.513 620.607L642.076 608.176Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 東京 -->
+        <a href="pref.html?pref=東京">
+          <path class="tokyo"
+            d="M601.048 628.327L605.391 649.509L626.382 657.901L634.317 655.102L643.18 661.164L650.168 652.772L663.231 649.274L655.308 643.917L654.525 637.384H626.852L601.048 628.327Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 神奈川 -->
+        <a href="pref.html?pref=神奈川">
+          <path class="kanagawa"
+            d="M592.544 659.676L598.703 688.121L615.031 678.411H626.376L643.18 687.73L646.91 681.674L643.18 674.444V661.164L634.317 655.102L626.382 657.901L605.391 649.509L592.544 659.676Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 群馬 -->
+        <a href="pref.html?pref=群馬">
+          <path class="gunma"
+            d="M612.073 536.491L632.006 550.521L628.139 611.438L608.128 605.879L595.124 613.148L583.826 615.595L569.438 572.069L586.262 558.137L596.352 549.608L612.073 536.491Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 栃木 -->
+        <a href="pref.html?pref=栃木">
+          <path class="tochigi"
+            d="M632.006 550.521L670.062 535.937L681.668 547.317L675.372 580.983L642.077 608.176L628.139 611.438L632.006 550.521Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 北海道 -->
+        <a href="pref.html?pref=北海">
+          <path class="hokkaido"
+            d="M847.422 2.00006L832.119 5.43909L827.502 50.8903L815.452 96.5961L807.164 106.358L801.416 135.528L787.316 143.17L760.956 133.283L751.826 136.553L756.476 151.229L745.987 169.494L726.687 179.465L719.836 205.098L730.776 220.107L717.916 241.466L725.048 253.976L738.685 247.326L741.376 237.511L751.793 232.539L768.284 239.991L776.317 229.433L756.006 213.21L744.628 199.271L746.418 190.507L759.728 180.346L768.284 184.151L776.272 196.719L787.877 186.441L807.399 182.513L878.83 229.282L884.309 210.475L902.708 184.83L933.384 170.16L958.105 158.159L996.991 153.095L988.246 143.718L978.279 118.705L997.807 85.9332L986.835 88.1584L958.817 106.026L913.464 83.9885L879.803 55.5431L868.844 29.1077L847.422 2.00006Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 佐賀 -->
+        <a href="pref.html?pref=佐賀">
+          <path class="saga"
+            d="M45.4584 664.864L22.7432 678.894L49.9975 709.428L55.3857 697.173L66.0053 678.894L49.9975 668.166L45.4584 664.864Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 福岡 -->
+        <a href="pref.html?pref=福岡">
+          <path class="hukuoka"
+            d="M94.1933 639.688L95.6366 648.772L110.919 658.776L106.994 670.639L97.7005 666.717L88.8247 694.575L80.1513 692.513L68.1733 705.304L55.3853 697.173L66.0049 678.894L49.9971 668.166L45.458 664.864L48.1423 658.671L65.6914 663.004L70.4265 645.143L94.1933 639.688Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 大分 -->
+        <a href="pref.html?pref=大分">
+          <path class="oita"
+            d="M133.426 656.198L121.448 664.864L110.92 658.776L106.995 670.639L97.701 666.717L88.8252 694.575L99.9738 709.428L104.519 692.513L111.122 699.111L111.952 716.443L152.014 720.156L157.382 715.621L145.816 693.336L149.95 688.18L130.951 683.43L142.1 672.499L133.426 656.198Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 熊本 -->
+        <a href="pref.html?pref=熊本">
+          <path class="kumamoto"
+            d="M68.1735 705.304L73.5421 724.287L60.937 765.438L73.5421 764.315L78.78 771.963L105.342 764.726L99.5621 735.426L111.952 716.443L111.122 699.111L104.519 692.513L99.9735 709.428L88.8249 694.575L80.1516 692.513L68.1735 705.304Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 宮崎 -->
+        <a href="pref.html?pref=宮崎">
+          <path class="miyazaki"
+            d="M152.014 720.156L135.49 742.03L115.394 811.365L105.754 811.359L104.03 802.073L98.243 800.382L78.7803 771.963L105.342 764.726L99.5623 735.426L111.952 716.443L152.014 720.156Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 鹿児島 -->
+        <a href="pref.html?pref=鹿児島">
+          <path class="kagosima"
+            d="M60.937 765.438L57.1554 779.396L56.8158 792.167L60.323 797.74L54.334 818.165L73.542 829.102L80.047 822.609L74.894 819.437L78.1334 796.213L85.1348 800.585L81.8039 809.708L86.1406 829.102L78.7016 839.83L104.101 824.56L99.562 816.723L105.754 811.359L104.029 802.073L98.2427 800.382L73.542 764.315L60.937 765.438Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 長崎 -->
+        <a href="pref.html?pref=長崎">
+          <path class="nagasaki"
+            d="M22.743 678.894H13.6582V697.877L32.4744 707.627L32.3307 714.518L22.743 709.428L16.545 716.443L27.2103 737.828L43.7275 726.682L50.5395 732.046L62.7265 725.448L49.9974 709.428L22.743 678.894Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 福井 -->
+        <a href="pref.html?pref=福井">
+          <path class="hukui"
+            d="M440.702 563.449L430.298 572.206L426.902 597.291L392.248 601.591L404.056 625.136L445 601.539L468.46 603.634L475.716 589.76L440.702 563.449Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 京都 -->
+        <a href="pref.html?pref=京都">
+          <path class="kyoto"
+            d="M381.413 579.267L381.151 597.212L392.248 601.591L404.056 625.136L400.947 648.093L411.26 668.557L398.406 666.815L376.09 644.373L377.533 631.257L360.853 613.892L368.958 598.439L362.773 580.696L381.413 579.267Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 大阪 -->
+        <a href="pref.html?pref=大阪">
+          <path class="osaka"
+            d="M376.09 644.373L364.837 680.617L351.592 689.622L387.343 694.458L391.967 660.335L376.09 644.373Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 奈良 -->
+        <a href="pref.html?pref=奈良">
+          <path class="nara"
+            d="M411.26 668.558L403.194 718.903L382.699 728.724L373.085 727.419L374.829 710.028L387.343 694.458L391.967 660.335L398.407 666.815L411.26 668.558Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 和歌山 -->
+        <a href="pref.html?pref=和歌山">
+          <path class="wakayama"
+            d="M351.592 689.622L347.327 721.057L371.374 755.603L387.97 743.825L382.699 728.724L373.085 727.419L374.829 710.028L387.343 694.458L351.592 689.622Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 三重 -->
+        <a href="pref.html?pref=三重">
+          <path class="mie"
+            d="M411.26 668.558L427.392 665.132L440.852 645.431L459.27 648.171L440.428 677.361L459.009 700.559L451.655 710.713L437.959 711.02L387.97 743.825L382.699 728.724L403.194 718.903L411.26 668.558Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 滋賀 -->
+        <a href="pref.html?pref=滋賀">
+          <path class="siga"
+            d="M440.572 604.09L440.702 618.277L440.852 645.431L427.392 665.132L411.26 668.557L400.947 648.093L404.056 625.136L440.572 604.09Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 兵庫 -->
+        <a href="pref.html?pref=兵庫">
+          <path class="hyogo"
+            d="M362.773 580.696L335.303 580.578L336.224 612.561H328.099L323.442 643.355L331.652 644.478L354.158 647.754L369.879 664.381L376.09 644.373L377.533 631.257L360.853 613.892L368.958 598.439L362.773 580.696Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 秋田 -->
+        <a href="pref.html?pref=秋田">
+          <path class="akita" d="M697.872 321.712L676.809 414.69L726.132 432.942L755.111 332.969L697.872 321.712Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 岩手 -->
+        <a href="pref.html?pref=岩手">
+          <path class="iwate"
+            d="M726.132 432.942L773.019 447.938L801.638 394.617L797.55 340.101L752.237 342.888L726.132 432.942Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 山形 -->
+        <a href="pref.html?pref=山形">
+          <path class="yamagata"
+            d="M652.455 447.938L666.764 463.058L652.455 496.521L683.477 504.463L726.132 432.942L676.809 414.69L652.455 447.938Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 宮城 -->
+        <a href="pref.html?pref=宮城">
+          <path class="miyagi"
+            d="M688.447 496.13L728.045 508.437L738.312 488.006H752.315L773.019 447.938L726.132 432.942L688.447 496.13Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 新潟 -->
+        <a href="pref.html?pref=新潟">
+          <path class="nigata"
+            d="M524.582 530.592L586.079 512.646L652.454 447.938L666.764 463.058L652.454 496.521L612.072 536.491L586.327 557.98L582.121 544.89L529.147 554.019L524.582 530.592Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 福島 -->
+        <a href="pref.html?pref=福島">
+          <path class="hukusima"
+            d="M632.005 550.521L670.062 535.936L706.695 571.854L721.919 561.817L728.045 508.437L688.447 496.13L683.477 504.463L652.454 496.521L612.072 536.491L632.005 550.521Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 長野 -->
+        <a href="pref.html?pref=長野">
+          <path class="nagano"
+            d="M586.327 557.98L569.437 572.069L585.85 621.71L516.666 659.676L501.181 651.434L516.666 608.371L531.479 598.433L521.538 569.028L529.147 554.019L582.121 544.89L586.327 557.98Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 石川 -->
+        <a href="pref.html?pref=石川">
+          <path class="isikawa"
+            d="M502.356 528.615L488.804 534.246L477.387 562.992L475.715 589.76L440.702 563.449L479.216 521.619L479.366 494.544L517.423 485.421L522.753 506.715L500.527 515.231L502.356 528.615Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 富山 -->
+        <a href="pref.html?pref=富山">
+          <path class="toyama"
+            d="M502.356 528.615L505.909 536.491L524.582 530.592L529.147 554.019L521.538 569.028L498.601 560.323L486.022 564.173L477.388 562.992L488.804 534.246L502.356 528.615Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 岐阜 -->
+        <a href="pref.html?pref=岐阜">
+          <path class="gihu"
+            d="M477.388 562.992L486.022 564.173L498.601 560.323L521.538 569.028L531.478 598.433L516.666 608.371L501.181 651.434L473.404 656.054L459.27 648.171L440.853 645.431L440.572 604.091L445 601.539L468.46 603.634L475.716 589.76L477.388 562.992Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 静岡 -->
+        <a href="pref.html?pref=静岡">
+          <path class="sizuoka"
+            d="M557.453 637.293L558.883 659.676L571.266 651.434L592.544 659.676L598.703 688.122H592.544L573.702 710.583L566.596 703.685L580.423 674.737L566.492 668.036L543.75 687.71L494.133 693.649L516.666 659.676L557.453 637.293Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 鳥取 -->
+        <a href="pref.html?pref=鳥取">
+          <path class="tottori"
+            d="M280.402 576.533L335.303 580.579L336.224 612.561H328.099L308.31 604.312L269.848 614.858L263.963 602.283L280.402 576.533Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 岡山 -->
+        <a href="pref.html?pref=岡山">
+          <path class="okayama"
+            d="M269.848 614.858L270.658 652.987L323.443 643.355L328.099 612.561L308.31 604.312L269.848 614.858Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 島根 -->
+        <a href="pref.html?pref=島根">
+          <path class="simane"
+            d="M280.402 576.533L263.964 602.283L191.599 641.528L176.682 612.424L238.995 587.887L242.45 574.099L272.689 569.433L280.402 576.533Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 広島 -->
+        <a href="pref.html?pref=広島">
+          <path class="hirosima"
+            d="M191.599 641.528L202.46 662.724L270.658 652.987L269.848 614.858L263.963 602.283L191.599 641.528Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 山口 -->
+        <a href="pref.html?pref=山口">
+          <path class="yamaguchi"
+            d="M162.477 621.149L135.888 625.606L124.929 647.512L139.742 657.242L168.766 654.814L188.053 670.633L202.46 662.724L176.682 612.424L162.477 621.149Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 香川 -->
+        <a href="pref.html?pref=香川">
+          <path class="kagawa"
+            d="M326.375 685.635L305.521 664.14L281.167 668.401L269.848 687.717L275.687 696.69L305.978 694.412L326.375 685.635Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 徳島 -->
+        <a href="pref.html?pref=徳島">
+          <path class="tokusima"
+            d="M326.375 685.635L335.512 719.203L308.107 742.474L282.989 709.467L274.394 708.762L275.687 696.69L305.978 694.412L326.375 685.635Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 高知 -->
+        <a href="pref.html?pref=高知">
+          <path class="kochi"
+            d="M282.989 709.467L244.018 706.276L194.544 752.51L219.663 768.635L245.846 740.803L248.283 729.24L274.466 728.94L294.412 754.488L308.108 742.474L282.989 709.467Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 愛媛 -->
+        <a href="pref.html?pref=愛媛">
+          <path class="ehime"
+            d="M269.848 687.717H248.74L237.173 672.636L224.535 675.246L204.746 701.258C204.746 701.258 177.041 707.646 178.106 709.017C179.17 710.387 194.544 752.517 194.544 752.517L244.018 706.276L274.394 708.769L275.681 696.696L269.848 687.723V687.717Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 沖縄 -->
+        <a href="pref.html?pref=沖縄">
+          <path class="okinawa"
+            d="M98.3212 454.464L87.5906 458.209L64.072 481.839L38.4961 515.609L69.1728 516.366L75.8345 495.627L103.344 464.5L98.3212 454.464Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 青森 -->
+        <a href="pref.html?pref=青森">
+          <path class="aomori"
+            d="M789.21 255.933L798.053 250.36L794.278 290.193L794.729 324.42L797.55 340.101L752.237 342.888L755.111 332.969L697.872 321.712L701.314 296.19L718.556 288.614L729.587 260.736L748.051 261.695L746.686 286.369L757.86 285.331L765.43 277.585L784.396 286.871L787.668 267.458L779.4 265.154L771.51 271.497L757.475 271.882L764.078 244.259L789.21 255.933Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 山梨 -->
+        <a href="pref.html?pref=山梨">
+          <path class="yamanasi"
+            d="M585.85 621.71L557.453 637.293L558.883 659.676L571.266 651.434L592.544 659.676L605.391 649.509L601.048 628.327L585.85 621.71Z"
+            fill="white" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </a>
+
+        <!-- 沖縄-本州線 -->
+        <path class="line" opacity="1" d="M2 570.451H121.461L221.126 438.476" stroke="black" stroke-width="4"
+          stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+
+
+    </div>
+  </div>
+
+
+
+
+
+  <!-- aタグ元-コメント化 -->
   <div>
-    <a href="pref.html?pref=北海">北海道</a>
-    <a href="pref.html?pref=青森">青森県</a>
-    <a href="pref.html?pref=岩手">岩手県</a>
-    <a href="pref.html?pref=宮城">宮城県</a>
-    <a href="pref.html?pref=秋田">秋田県</a>
-    <a href="pref.html?pref=山形">山形県</a>
-    <a href="pref.html?pref=福島">福島県</a>
-    <a href="pref.html?pref=茨城">茨城県</a>
-    <a href="pref.html?pref=栃木">栃木県</a>
-    <a href="pref.html?pref=群馬">群馬県</a>
-    <a href="pref.html?pref=埼玉">埼玉県</a>
-    <a href="pref.html?pref=千葉">千葉県</a>
-    <a href="pref.html?pref=東京">東京都</a>
-    <a href="pref.html?pref=神奈川">神奈川県</a>
-    <a href="pref.html?pref=新潟">新潟県</a>
-    <a href="pref.html?pref=富山">富山県</a>
-    <a href="pref.html?pref=石川">石川県</a>
-    <a href="pref.html?pref=福井">福井県</a>
-    <a href="pref.html?pref=山梨">山梨県</a>
-    <a href="pref.html?pref=長野">長野県</a>
-    <a href="pref.html?pref=岐阜">岐阜県</a>
-    <a href="pref.html?pref=静岡">静岡県</a>
-    <a href="pref.html?pref=愛知">愛知県</a>
-    <a href="pref.html?pref=三重">三重県</a>
-    <a href="pref.html?pref=滋賀">滋賀県</a>
-    <a href="pref.html?pref=京都">京都府</a>
-    <a href="pref.html?pref=大阪">大阪府</a>
-    <a href="pref.html?pref=兵庫">兵庫県</a>
-    <a href="pref.html?pref=奈良">奈良県</a>
-    <a href="pref.html?pref=和歌山">和歌山県</a>
-    <a href="pref.html?pref=鳥取">鳥取県</a>
-    <a href="pref.html?pref=島根">島根県</a>
-    <a href="pref.html?pref=岡山">岡山県</a>
-    <a href="pref.html?pref=広島">広島県</a>
-    <a href="pref.html?pref=山口">山口県</a>
-    <a href="pref.html?pref=徳島">徳島県</a>
-    <a href="pref.html?pref=香川">香川県</a>
-    <a href="pref.html?pref=愛媛">愛媛県</a>
-    <a href="pref.html?pref=高知">高知県</a>
-    <a href="pref.html?pref=福岡">福岡県</a>
-    <a href="pref.html?pref=佐賀">佐賀県</a>
-    <a href="pref.html?pref=長崎">長崎県</a>
-    <a href="pref.html?pref=熊本">熊本県</a>
-    <a href="pref.html?pref=大分">大分県</a>
-    <a href="pref.html?pref=宮崎">宮崎県</a>
-    <a href="pref.html?pref=鹿児島">鹿児島県</a>
-    <a href="pref.html?pref=沖縄">沖縄県</a>
+    <!-- <a href="pref.html?pref=北海">北海道</a> -->
+    <!-- <a href="pref.html?pref=青森">青森県</a> -->
+    <!-- <a href="pref.html?pref=岩手">岩手県</a> -->
+    <!-- <a href="pref.html?pref=宮城">宮城県</a> -->
+    <!-- <a href="pref.html?pref=秋田">秋田県</a> -->
+    <!-- <a href="pref.html?pref=山形">山形県</a> -->
+    <!-- <a href="pref.html?pref=福島">福島県</a> -->
+    <!-- <a href="pref.html?pref=茨城">茨城県</a> -->
+    <!-- <a href="pref.html?pref=栃木">栃木県</a> -->
+    <!-- <a href="pref.html?pref=群馬">群馬県</a> -->
+    <!-- <a href="pref.html?pref=埼玉">埼玉県</a> -->
+    <!-- <a href="pref.html?pref=千葉">千葉県</a> -->
+    <!-- <a href="pref.html?pref=東京">東京都</a> -->
+    <!-- <a href="pref.html?pref=神奈川">神奈川県</a> -->
+    <!-- <a href="pref.html?pref=新潟">新潟県</a> -->
+    <!-- <a href="pref.html?pref=富山">富山県</a> -->
+    <!-- <a href="pref.html?pref=石川">石川県</a> -->
+    <!-- <a href="pref.html?pref=福井">福井県</a> -->
+    <!-- <a href="pref.html?pref=山梨">山梨県</a> -->
+    <!-- <a href="pref.html?pref=長野">長野県</a> -->
+    <!-- <a href="pref.html?pref=岐阜">岐阜県</a> -->
+    <!-- <a href="pref.html?pref=静岡">静岡県</a> -->
+    <!-- <a href="pref.html?pref=愛知">愛知県</a> -->
+    <!-- <a href="pref.html?pref=三重">三重県</a> -->
+    <!-- <a href="pref.html?pref=滋賀">滋賀県</a> -->
+    <!-- <a href="pref.html?pref=京都">京都府</a> -->
+    <!-- <a href="pref.html?pref=大阪">大阪府</a> -->
+    <!-- <a href="pref.html?pref=兵庫">兵庫県</a> -->
+    <!-- <a href="pref.html?pref=奈良">奈良県</a> -->
+    <!-- <a href="pref.html?pref=和歌山">和歌山県</a> -->
+    <!-- <a href="pref.html?pref=鳥取">鳥取県</a> -->
+    <!-- <a href="pref.html?pref=島根">島根県</a> -->
+    <!-- <a href="pref.html?pref=岡山">岡山県</a> -->
+    <!-- <a href="pref.html?pref=広島">広島県</a> -->
+    <!-- <a href="pref.html?pref=山口">山口県</a> -->
+    <!-- <a href="pref.html?pref=徳島">徳島県</a> -->
+    <!-- <a href="pref.html?pref=香川">香川県</a> -->
+    <!-- <a href="pref.html?pref=愛媛">愛媛県</a> -->
+    <!-- <a href="pref.html?pref=高知">高知県</a> -->
+    <!-- <a href="pref.html?pref=福岡">福岡県</a> -->
+    <!-- <a href="pref.html?pref=佐賀">佐賀県</a> -->
+    <!-- <a href="pref.html?pref=長崎">長崎県</a> -->
+    <!-- <a href="pref.html?pref=熊本">熊本県</a> -->
+    <!-- <a href="pref.html?pref=大分">大分県</a> -->
+    <!-- <a href="pref.html?pref=宮崎">宮崎県</a> -->
+    <!-- <a href="pref.html?pref=鹿児島">鹿児島県</a> -->
+    <!-- <a href="pref.html?pref=沖縄">沖縄県</a> -->
   </div>
+
+
+
+
 </body>
+
 </html>

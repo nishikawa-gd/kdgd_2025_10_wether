@@ -1,7 +1,31 @@
-
-
-
+* {
+    transition: 0.2s;
+}
 
 body {
     background-color: #f0f0f0;
+
+
+    .main-wrapper {
+        width: 900px;
+        height: auto;
+
+        .svg-wrapper {
+            width: 100%;
+            height: auto;
+
+            svg {
+                width: 100%;
+                height: auto;
+
+                a {
+                    &:hover {
+                        path {
+                            fill: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
