@@ -2,6 +2,11 @@
     transition: 0.2s;
 }
 
+html {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 400, 500;
+}
+
 body {
     background-color: #f0f0f0;
 
@@ -21,10 +26,33 @@ body {
                 a {
                     &:hover {
                         path {
-                            fill: black;
+                            fill: #44F0EA;
                         }
                     }
                 }
+            }
+        }
+    }
+
+
+    .todohuken-wrapper {
+        .todohuken-block {
+            width: 120px;
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 6px;
+            justify-content: space-between;
+
+            a {
+                padding: 6px 10px;
+                background-color: #fff;
+                border: 3px solid #000;
+                border-radius: 10px;
+
+                text-decoration: none;
+                color: #000;
+                font-size: 16px;
+                font-weight: 500;
             }
         }
     }
