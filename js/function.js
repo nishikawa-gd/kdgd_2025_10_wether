@@ -1,3 +1,8 @@
+// 例: デバッグ用のJavaScript
+$('map area').each(function() {
+    $(this).css('border', '2px solid blue'); // または addClass('debug-border') など
+});
+
 $(function() {
 
 	// bodyにhomeクラスがある場合の処理
@@ -70,4 +75,20 @@ $(function() {
 		renderWeather("today", today, data.today);
 		renderWeather("tomorrow", tomorrow, data.tomorrow);
 	}
+});
+
+$('area').each(function() {
+  const coords = $(this).attr('coords').split(',');
+  const map = $('img[usemap]').offset();
+  const areaBox = $('<div></div>').css({
+    position: 'absolute',
+    border: '1px solid red',
+    opacity: 0.4,
+    pointerEvents: 'none',
+    left: parseInt(coords[0]) / 10 + map.left, // 座標縮小のため /10
+    top: parseInt(coords[1]) / 10 + map.top,
+    width: 50, // 仮
+    height: 50, // 仮
+  });
+  $('body').append(areaBox);
 });
