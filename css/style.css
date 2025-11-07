@@ -12,7 +12,6 @@ html {
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
   background-color: #f0f0f0;
 }
 .all-wrapper h1 {
@@ -91,5 +90,84 @@ html {
   fill: #44F0EA;
 }
 .all-wrapper a[data-pref].hovered {
+  background-color: #44F0EA;
+}
+
+.all-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+.all-wrapper h2 {
+  font-size: 64px;
+}
+.all-wrapper .weather-wrapper {
+  display: flex;
+  -moz-column-gap: 120px;
+       column-gap: 120px;
+  font-weight: 500;
+}
+.all-wrapper .weather-wrapper .weather-block .day-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+.all-wrapper .weather-wrapper .weather-block .day-wrapper .day-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 4px;
+}
+.all-wrapper .weather-wrapper .weather-block .day-wrapper .day-block p {
+  font-size: 20px;
+}
+.all-wrapper .weather-wrapper .weather-block .day-wrapper .day-block h3 {
+  font-size: 36px;
+}
+.all-wrapper .weather-wrapper .weather-block .day-wrapper p {
+  font-size: 24px;
+}
+.all-wrapper .weather-wrapper .weather-block table {
+  margin-top: 50px;
+  border: 3px solid #000;
+  border-radius: 10px;
+  border-collapse: separate;
+}
+.all-wrapper .weather-wrapper .weather-block table th:first-child {
+  border-radius: 8px 0 0 0;
+}
+.all-wrapper .weather-wrapper .weather-block table th:last-child {
+  border-radius: 0 8px 0 0;
+}
+.all-wrapper .weather-wrapper .weather-block table tr:last-child td:first-child {
+  border-radius: 0 0 0 8px;
+}
+.all-wrapper .weather-wrapper .weather-block table tr:last-child td:last-child {
+  border-radius: 0 0 8px 0;
+}
+.all-wrapper .weather-wrapper .weather-block table th,
+.all-wrapper .weather-wrapper .weather-block table td {
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  border: 1.4px solid #000;
+}
+.all-wrapper .weather-wrapper .weather-block table td {
+  background-color: #fff;
+}
+.all-wrapper .to-top a {
+  padding: 4px 10px;
+  border: 3px solid #000;
+  border-radius: 10px;
+  background-color: #fff;
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+}
+.all-wrapper .to-top a:hover {
   background-color: #44F0EA;
 }/*# sourceMappingURL=style.css.map */

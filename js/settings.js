@@ -18,10 +18,10 @@ const PREF_WEATHER = {
       maxTemp: -2,
       minTemp: -8,
       table: [
-        { time: "0-6", precip: "50％", wind: "北西の風", wave: "1メートル" },
-        { time: "6-12", precip: "60％", wind: "北西の風", wave: "1メートル" },
-        { time: "12-18", precip: "70％", wind: "北西の風", wave: "1.5メートル" },
-        { time: "18-24", precip: "80％", wind: "北西の風", wave: "1.5メートル" }
+        { time: "0-6", precip: "50％", wind: "北西", wave: "1m" },
+        { time: "6-12", precip: "60％", wind: "北西", wave: "1m" },
+        { time: "12-18", precip: "70％", wind: "北西", wave: "1.5m" },
+        { time: "18-24", precip: "80％", wind: "北西", wave: "1.5m" }
       ]
     },
     tomorrow: {
@@ -29,10 +29,10 @@ const PREF_WEATHER = {
       maxTemp: -1,
       minTemp: -7,
       table: [
-        { time: "0-6", precip: "40％", wind: "北西の風", wave: "1メートル" },
-        { time: "6-12", precip: "50％", wind: "北西の風", wave: "1メートル" },
-        { time: "12-18", precip: "60％", wind: "北西の風", wave: "1.5メートル" },
-        { time: "18-24", precip: "70％", wind: "北西の風", wave: "1.5メートル" }
+        { time: "0-6", precip: "40％", wind: "北西", wave: "1m" },
+        { time: "6-12", precip: "50％", wind: "北西", wave: "1m" },
+        { time: "12-18", precip: "60％", wind: "北西", wave: "1.5m" },
+        { time: "18-24", precip: "70％", wind: "北西", wave: "1.5m" }
       ]
     }
   },
@@ -42,10 +42,10 @@ const PREF_WEATHER = {
       maxTemp: 3,
       minTemp: -2,
       table: [
-        { time: "0-6", precip: "20％", wind: "北の風", wave: "1メートル" },
-        { time: "6-12", precip: "30％", wind: "北の風", wave: "1メートル" },
-        { time: "12-18", precip: "40％", wind: "北の風", wave: "1.5メートル" },
-        { time: "18-24", precip: "50％", wind: "北の風", wave: "1.5メートル" }
+        { time: "0-6", precip: "20％", wind: "北", wave: "1m" },
+        { time: "6-12", precip: "30％", wind: "北", wave: "1m" },
+        { time: "12-18", precip: "40％", wind: "北", wave: "1.5m" },
+        { time: "18-24", precip: "50％", wind: "北", wave: "1.5m" }
       ]
     },
     tomorrow: {
@@ -53,10 +53,10 @@ const PREF_WEATHER = {
       maxTemp: 5,
       minTemp: 0,
       table: [
-        { time: "0-6", precip: "50％", wind: "北東の風", wave: "1メートル" },
-        { time: "6-12", precip: "60％", wind: "北東の風", wave: "1メートル" },
-        { time: "12-18", precip: "70％", wind: "北東の風", wave: "1.5メートル" },
-        { time: "18-24", precip: "80％", wind: "北東の風", wave: "1.5メートル" }
+        { time: "0-6", precip: "50％", wind: "北東", wave: "1m" },
+        { time: "6-12", precip: "60％", wind: "北東", wave: "1m" },
+        { time: "12-18", precip: "70％", wind: "北東", wave: "1.5m" },
+        { time: "18-24", precip: "80％", wind: "北東", wave: "1.5m" }
       ]
     }
   },
@@ -66,10 +66,10 @@ const PREF_WEATHER = {
       maxTemp: 4,
       minTemp: -1,
       table: [
-        { time: "0-6", precip: "10％", wind: "北の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "北の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "北の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "北の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "北", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "北", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "北", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "北", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -77,10 +77,10 @@ const PREF_WEATHER = {
       maxTemp: 6,
       minTemp: 1,
       table: [
-        { time: "0-6", precip: "0％", wind: "北東の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "北東の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "20％", wind: "北東の風", wave: "1メートル" },
-        { time: "18-24", precip: "30％", wind: "北東の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "北東", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "北東", wave: "0.5m" },
+        { time: "12-18", precip: "20％", wind: "北東", wave: "1m" },
+        { time: "18-24", precip: "30％", wind: "北東", wave: "1m" }
       ]
     }
   },
@@ -90,10 +90,10 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -101,34 +101,34 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西", wave: "1m" }
       ]
     }
   },
   "秋田": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
-      minTemp: 2,
+      maxTemp: 6,
+      minTemp: 0,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
-      maxTemp: 10,
-      minTemp: 3,
+      maxTemp: 12,
+      minTemp: 6,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西", wave: "1m" }
       ]
     }
   },
@@ -136,119 +136,119 @@ const PREF_WEATHER = {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
-      minTemp: 2,
+      minTemp: 0,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
-      maxTemp: 10,
-      minTemp: 3,
+      maxTemp: 6,
+      minTemp: 1,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西", wave: "1m" }
       ]
     }
   },
   "福島": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
-      minTemp: 2,
+      maxTemp: 10,
+      minTemp: 4,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
-      maxTemp: 10,
-      minTemp: 3,
+      maxTemp: 6,
+      minTemp: 4,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西", wave: "1m" }
       ]
     }
   },
   "茨城": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
-      minTemp: 2,
+      maxTemp: 12,
+      minTemp: 5,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
-      maxTemp: 10,
-      minTemp: 3,
+      maxTemp: 4,
+      minTemp: 0,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西", wave: "1m" }
       ]
     }
   },
   "栃木": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
-      minTemp: 2,
+      maxTemp: 6,
+      minTemp: 1,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
       maxTemp: 10,
-      minTemp: 3,
+      minTemp: 5,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西", wave: "1m" }
       ]
     }
   },
   "群馬": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
-      minTemp: 2,
+      maxTemp: 10,
+      minTemp: 3,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
-      maxTemp: 10,
-      minTemp: 3,
+      maxTemp: 8,
+      minTemp: 1,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西", wave: "1m" }
       ]
     }
   },
@@ -256,36 +256,36 @@ const PREF_WEATHER = {
     today: {
       weather: WEATHER_LIST.sunny,
       maxTemp: 8,
-      minTemp: 2,
+      minTemp: 5,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
-      maxTemp: 10,
-      minTemp: 3,
+      maxTemp: 7,
+      minTemp: 2,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西", wave: "1m" }
       ]
     }
   },
   "千葉": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
-      minTemp: 2,
+      maxTemp: 16,
+      minTemp: 4,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -293,10 +293,10 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西", wave: "1m" }
       ]
     }
   },
@@ -306,69 +306,69 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
-      maxTemp: 10,
-      minTemp: 3,
+      maxTemp: 15,
+      minTemp: 10,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西", wave: "1m" }
       ]
     }
   },
   "神奈川": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
-      minTemp: 2,
+      maxTemp: 10,
+      minTemp: 5,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
-      maxTemp: 10,
-      minTemp: 3,
+      maxTemp: 7,
+      minTemp: 1,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西", wave: "1m" }
       ]
     }
   },
   "新潟": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
-      minTemp: 2,
+      maxTemp: 9,
+      minTemp: 5,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
-      maxTemp: 10,
-      minTemp: 3,
+      maxTemp: 4,
+      minTemp: 1,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西", wave: "1m" }
       ]
     }
   },
@@ -378,237 +378,237 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
-      maxTemp: 10,
-      minTemp: 3,
+      maxTemp: 4,
+      minTemp: 0,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西", wave: "1m" }
       ]
     }
   },
   "石川": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
+      maxTemp: 6,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
-      maxTemp: 10,
-      minTemp: 3,
+      maxTemp: 7,
+      minTemp: 0,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西", wave: "1m" }
       ]
     }
   },
   "福井": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
-      minTemp: 2,
+      maxTemp: 10,
+      minTemp: 6,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
-      maxTemp: 10,
+      maxTemp: 5,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西", wave: "1m" }
       ]
     }
   },
   "山梨": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
-      minTemp: 2,
+      maxTemp: 9,
+      minTemp: 4,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
       maxTemp: 10,
-      minTemp: 3,
+      minTemp: 2,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西", wave: "1m" }
       ]
     }
   },
   "長野": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
+      maxTemp: 6,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
-      maxTemp: 10,
+      maxTemp: 7,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西", wave: "1m" }
       ]
     }
   },
   "岐阜": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
+      maxTemp: 10,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
-      maxTemp: 10,
-      minTemp: 3,
+      maxTemp: 4,
+      minTemp: 0,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西", wave: "1m" }
       ]
     }
   },
   "静岡": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
-      minTemp: 2,
+      maxTemp: 9,
+      minTemp: 1,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
       maxTemp: 10,
-      minTemp: 3,
+      minTemp: 6,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西", wave: "1m" }
       ]
     }
   },
   "愛知": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
-      minTemp: 2,
+      maxTemp: 10,
+      minTemp: 6,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
-      maxTemp: 10,
-      minTemp: 3,
+      maxTemp: 14,
+      minTemp: 7,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西", wave: "1m" }
       ]
     }
   },
   "三重": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
+      maxTemp: 6,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
-      maxTemp: 10,
+      maxTemp: 8,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西", wave: "1m" }
       ]
     }
   },
   "滋賀": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
-      minTemp: 2,
+      maxTemp: 10,
+      minTemp: 6,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
-      maxTemp: 10,
-      minTemp: 3,
+      maxTemp: 4,
+      minTemp: 1,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西", wave: "1m" }
       ]
     }
   },
@@ -618,394 +618,394 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
-      maxTemp: 10,
-      minTemp: 3,
+      maxTemp: 6,
+      minTemp: 0,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西", wave: "1m" }
       ]
     }
   },
   "大阪": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
-      minTemp: 2,
+      maxTemp: 14,
+      minTemp: 10,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
-      maxTemp: 10,
-      minTemp: 3,
+      maxTemp: 16,
+      minTemp: 12,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西", wave: "1m" }
       ]
     }
   },
   "兵庫": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
-      minTemp: 2,
+      maxTemp: 10,
+      minTemp: 4,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
-      maxTemp: 10,
-      minTemp: 3,
+      maxTemp: 11,
+      minTemp: 7,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西", wave: "1m" }
       ]
     }
   },
   "奈良": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
+      maxTemp: 9,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
-      maxTemp: 10,
-      minTemp: 3,
+      maxTemp: 8,
+      minTemp: 2,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西", wave: "1m" }
       ]
     }
   },
   "和歌山": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
-      minTemp: 2,
+      maxTemp: 10,
+      minTemp: 5,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
-      maxTemp: 10,
-      minTemp: 3,
+      maxTemp: 12,
+      minTemp: 5,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西", wave: "1m" }
       ]
     }
   },
   "鳥取": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
-      minTemp: 2,
+      maxTemp: 9,
+      minTemp: 3,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
-      maxTemp: 10,
-      minTemp: 3,
+      maxTemp: 12,
+      minTemp: 8,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西", wave: "1m" }
       ]
     }
   },
   "島根": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
+      maxTemp: 6,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
-      maxTemp: 10,
+      maxTemp: 8,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西", wave: "1m" }
       ]
     }
   },
   "岡山": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
-      minTemp: 2,
+      maxTemp: 10,
+      minTemp: 6,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
-      maxTemp: 10,
-      minTemp: 3,
+      maxTemp: 7,
+      minTemp: 4,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西", wave: "1m" }
       ]
     }
   },
   "広島": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
+      maxTemp: 11,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
-      maxTemp: 10,
-      minTemp: 3,
+      maxTemp: 12,
+      minTemp: 4,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西", wave: "1m" }
       ]
     }
   },
   "山口": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
+      maxTemp: 6,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
-      maxTemp: 10,
+      maxTemp: 8,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西", wave: "1m" }
       ]
     }
   },
   "徳島": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
-      minTemp: 2,
+      maxTemp: 10,
+      minTemp: 5,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
-      maxTemp: 10,
-      minTemp: 3,
+      maxTemp: 12,
+      minTemp: 4,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西", wave: "1m" }
       ]
     }
   },
   "香川": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
-      minTemp: 2,
+      maxTemp: 10,
+      minTemp: 8,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
-      maxTemp: 10,
-      minTemp: 3,
+      maxTemp: 12,
+      minTemp: 8,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西", wave: "1m" }
       ]
     }
   },
   "愛媛": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
-      minTemp: 2,
+      maxTemp: 11,
+      minTemp: 4,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
-      maxTemp: 10,
-      minTemp: 3,
+      maxTemp: 8,
+      minTemp: 1,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西", wave: "1m" }
       ]
     }
   },
   "高知": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
-      minTemp: 2,
+      maxTemp: 10,
+      minTemp: 6,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
-      maxTemp: 10,
+      maxTemp: 8,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "50％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "60％", wind: "南西", wave: "1m" }
       ]
     }
   },
   "福岡": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
+      maxTemp: 10,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "0％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
-      maxTemp: 10,
-      minTemp: 3,
+      maxTemp: 11,
+      minTemp: 7,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "50％", wind: "南西", wave: "1m" }
       ]
     }
   },
   "佐賀": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
-      minTemp: 2,
+      maxTemp: 13,
+      minTemp: 4,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南東", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "東", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "東", wave: "1m" },
+        { time: "18-24", precip: "80％", wind: "東", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
-      maxTemp: 10,
+      maxTemp: 9,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "50％", wind: "南東", wave: "0.5m" },
+        { time: "6-12", precip: "50％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "0％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "0％", wind: "南", wave: "1m" }
       ]
     }
   },
   "長崎": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
-      minTemp: 2,
+      maxTemp: 11,
+      minTemp: 6,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
@@ -1013,58 +1013,58 @@ const PREF_WEATHER = {
       maxTemp: 10,
       minTemp: 3,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "0％", wind: "西", wave: "0.5m" },
+        { time: "12-18", precip: "0％", wind: "西", wave: "1m" },
+        { time: "18-24", precip: "0％", wind: "南西", wave: "1m" }
       ]
     }
   },
   "熊本": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
-      minTemp: 2,
+      maxTemp: 10,
+      minTemp: 5,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南東", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南東", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南東", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南東", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
-      maxTemp: 10,
-      minTemp: 3,
+      maxTemp: 12,
+      minTemp: 7,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南東", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南東", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南東", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南東", wave: "1m" }
       ]
     }
   },
   "大分": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
-      minTemp: 2,
+      maxTemp: 9,
+      minTemp: 5,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南東", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南東", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
       maxTemp: 10,
-      minTemp: 3,
+      minTemp: 6,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西", wave: "1m" }
       ]
     }
   },
@@ -1074,69 +1074,69 @@ const PREF_WEATHER = {
       maxTemp: 8,
       minTemp: 2,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南東", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南東", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
-      maxTemp: 10,
-      minTemp: 3,
+      maxTemp: 11,
+      minTemp: 5,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南西", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南西", wave: "0.5m" },
+        { time: "12-18", precip: "30％", wind: "南西東", wave: "1m" },
+        { time: "18-24", precip: "40％", wind: "南西東", wave: "1m" }
       ]
     }
   },
   "鹿児島": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
-      minTemp: 2,
+      maxTemp: 12,
+      minTemp: 6,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "30％", wind: "南東", wave: "0.5m" },
+        { time: "6-12", precip: "30％", wind: "南東", wave: "0.5m" },
+        { time: "12-18", precip: "50％", wind: "南東", wave: "1m" },
+        { time: "18-24", precip: "90％", wind: "南東", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
       maxTemp: 10,
-      minTemp: 3,
+      minTemp: 6,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "90％", wind: "南東", wave: "0.5m" },
+        { time: "6-12", precip: "40％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "10％", wind: "南東", wave: "1m" }
       ]
     }
   },
   "沖縄": {
     today: {
       weather: WEATHER_LIST.sunny,
-      maxTemp: 8,
-      minTemp: 2,
+      maxTemp: 16,
+      minTemp: 10,
       table: [
-        { time: "0-6", precip: "0％", wind: "南の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "10％", wind: "南の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "10％", wind: "南の風", wave: "1メートル" },
-        { time: "18-24", precip: "20％", wind: "南の風", wave: "1メートル" }
+        { time: "0-6", precip: "0％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "10％", wind: "南", wave: "1m" },
+        { time: "18-24", precip: "20％", wind: "南", wave: "1m" }
       ]
     },
     tomorrow: {
       weather: WEATHER_LIST.cloudy,
-      maxTemp: 10,
-      minTemp: 3,
+      maxTemp: 17,
+      minTemp: 15,
       table: [
-        { time: "0-6", precip: "10％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "6-12", precip: "20％", wind: "南西の風", wave: "0.5メートル" },
-        { time: "12-18", precip: "30％", wind: "南西の風", wave: "1メートル" },
-        { time: "18-24", precip: "40％", wind: "南西の風", wave: "1メートル" }
+        { time: "0-6", precip: "10％", wind: "南", wave: "0.5m" },
+        { time: "6-12", precip: "20％", wind: "南", wave: "0.5m" },
+        { time: "12-18", precip: "20％", wind: "南西", wave: "1m" },
+        { time: "18-24", precip: "60％", wind: "南西", wave: "1m" }
       ]
     }
   }

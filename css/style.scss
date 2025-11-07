@@ -7,13 +7,14 @@ html {
     font-weight: 400, 500;
 }
 
+
+// index
 .all-wrapper {
     width: 100vw;
     height: 100vh;
 
     display: flex;
     align-items: center;
-    justify-content: center;
 
     background-color: #f0f0f0;
 
@@ -102,7 +103,7 @@ html {
             bottom: 120px;
         }
 
-         &.okinawa-block {
+        &.okinawa-block {
             left: 280px;
             top: 420px;
         }
@@ -120,4 +121,119 @@ html {
     }
 
 
+}
+
+
+
+// pref
+.all-wrapper {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+
+    h2 {
+        font-size: 64px;
+    }
+
+    .weather-wrapper {
+
+        display: flex;
+        column-gap: 120px;
+
+        font-weight: 500;
+
+        .weather-block {
+            .day-wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 20px;
+
+                .day-block {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    row-gap: 4px;
+
+                    p {
+                        font-size: 20px;
+                    }
+
+                    h3 {
+                        font-size: 36px;
+                    }
+                }
+
+                p {
+                    font-size: 24px;
+                }
+            }
+
+            table {
+                margin-top: 50px;
+
+                border: 3px solid #000;
+                border-radius: 10px;
+                border-collapse: separate;
+
+                th:first-child {
+                    border-radius: 8px 0 0 0;
+                }
+
+                th:last-child {
+                    border-radius: 0 8px 0 0;
+                }
+
+                tr:last-child td:first-child {
+                    border-radius: 0 0 0 8px;
+                }
+
+                tr:last-child td:last-child {
+                    border-radius: 0 0 8px 0;
+                }
+
+                th,
+                td {
+                    width: 100px;
+                    height: 40px;
+
+                    text-align: center;
+
+                    border: 1.4px solid #000;
+                }
+
+                td {
+                    background-color: #fff;
+                }
+            }
+
+
+        }
+
+    }
+
+    .to-top {
+
+        a {
+            padding: 4px 10px;
+
+            border: 3px solid #000;
+            border-radius: 10px;
+
+            background-color: #fff;
+
+            text-decoration: none;
+            color: #000;
+            font-size: 24px;
+            font-weight: 500;
+
+            &:hover {
+                background-color: #44F0EA;
+            }
+        }
+
+    }
 }
