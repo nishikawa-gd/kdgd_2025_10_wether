@@ -9,231 +9,241 @@ html {
 
 
 // index
-.all-wrapper {
-    width: 100vw;
-    height: 100vh;
+.home {
+    .all-wrapper {
+        width: 100vw;
+        height: 100vh;
 
-    display: flex;
-    align-items: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-    background-color: #f0f0f0;
+        background-color: #f0f0f0;
 
-    h1 {
-        position: absolute;
-        top: 50px;
-        left: 50px;
+        h1 {
+            position: absolute;
+            top: 50px;
+            left: 50px;
 
-        font-size: 64px;
-    }
+            font-size: 64px;
+        }
 
-    .main-wrapper {
-        width: 850px;
-        height: auto;
-
-        .svg-wrapper {
-            width: 100%;
+        .main-wrapper {
+            width: 850px;
             height: auto;
 
-            svg {
+            .svg-wrapper {
                 width: 100%;
                 height: auto;
+
+                svg {
+                    width: 100%;
+                    height: auto;
+                }
             }
         }
+
+        .todohuken-block {
+            position: absolute;
+
+            width: 120px;
+            display: flex;
+
+            flex-wrap: wrap;
+            row-gap: 6px;
+            justify-content: space-between;
+
+            a {
+                padding: 6px 10px;
+                background-color: #fff;
+                border: 3px solid #000;
+                border-radius: 10px;
+
+                text-decoration: none;
+                color: #000;
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            &.hokkaido-block {
+                right: 240px;
+                top: 220px;
+            }
+
+            &.tohoku-block {
+                right: 320px;
+                top: 380px;
+            }
+
+            &.kanto-block {
+                right: 380px;
+                bottom: 80px;
+            }
+
+            &.chubu-block {
+                right: 610px;
+                top: 200px;
+            }
+
+            &.kinki-block {
+                right: 780px;
+                top: 340px;
+            }
+
+            &.chugoku-block {
+                left: 400px;
+                top: 260px;
+            }
+
+            &.sikoku-block {
+                left: 520px;
+                bottom: 30px;
+            }
+
+            &.kyusyu-block {
+                left: 150px;
+                bottom: 120px;
+            }
+
+            &.okinawa-block {
+                left: 280px;
+                top: 420px;
+            }
+
+
+        }
+
+
+        [data-pref].hovered path {
+            fill: #44F0EA;
+        }
+
+        a[data-pref].hovered {
+            background-color: #44F0EA;
+        }
+
+
     }
-
-    .todohuken-block {
-        position: absolute;
-
-        width: 120px;
-        display: flex;
-
-        flex-wrap: wrap;
-        row-gap: 6px;
-        justify-content: space-between;
-
-        a {
-            padding: 6px 10px;
-            background-color: #fff;
-            border: 3px solid #000;
-            border-radius: 10px;
-
-            text-decoration: none;
-            color: #000;
-            font-size: 16px;
-            font-weight: 500;
-        }
-
-        &.hokkaido-block {
-            right: 240px;
-            top: 220px;
-        }
-
-        &.tohoku-block {
-            right: 320px;
-            top: 380px;
-        }
-
-        &.kanto-block {
-            right: 380px;
-            bottom: 80px;
-        }
-
-        &.chubu-block {
-            right: 610px;
-            top: 200px;
-        }
-
-        &.kinki-block {
-            right: 780px;
-            top: 340px;
-        }
-
-        &.chugoku-block {
-            left: 400px;
-            top: 260px;
-        }
-
-        &.sikoku-block {
-            left: 520px;
-            bottom: 30px;
-        }
-
-        &.kyusyu-block {
-            left: 150px;
-            bottom: 120px;
-        }
-
-        &.okinawa-block {
-            left: 280px;
-            top: 420px;
-        }
-
-
-    }
-
-
-    [data-pref].hovered path {
-        fill: #44F0EA;
-    }
-
-    a[data-pref].hovered {
-        background-color: #44F0EA;
-    }
-
-
 }
 
 
 
+
 // pref
-.all-wrapper {
-    width: 100vw;
-    height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    row-gap: 50px;
-
-    h2 {
-        font-size: 64px;
-    }
-
-    .weather-wrapper {
+.pref {
+    .all-wrapper {
+        width: 100vw;
+        height: 100vh;
 
         display: flex;
-        column-gap: 120px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 50px;
 
-        font-weight: 500;
+        background-color: #f0f0f0;
 
-        .weather-block {
-            .day-wrapper {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                row-gap: 20px;
+        h2 {
+            font-size: 64px;
+        }
 
-                .day-block {
+        .weather-wrapper {
+
+            display: flex;
+            column-gap: 120px;
+
+            font-weight: 500;
+
+            .weather-block {
+                .day-wrapper {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    row-gap: 4px;
+                    row-gap: 20px;
+
+                    .day-block {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        row-gap: 4px;
+
+                        p {
+                            font-size: 20px;
+                        }
+
+                        h3 {
+                            font-size: 36px;
+                        }
+                    }
 
                     p {
-                        font-size: 20px;
-                    }
-
-                    h3 {
-                        font-size: 36px;
+                        font-size: 24px;
                     }
                 }
 
-                p {
-                    font-size: 24px;
+                table {
+                    margin-top: 50px;
+
+                    border: 3px solid #000;
+                    border-radius: 10px;
+                    border-collapse: separate;
+
+                    th:first-child {
+                        border-radius: 8px 0 0 0;
+                    }
+
+                    th:last-child {
+                        border-radius: 0 8px 0 0;
+                    }
+
+                    tr:last-child td:first-child {
+                        border-radius: 0 0 0 8px;
+                    }
+
+                    tr:last-child td:last-child {
+                        border-radius: 0 0 8px 0;
+                    }
+
+                    th,
+                    td {
+                        width: 100px;
+                        height: 40px;
+
+                        text-align: center;
+
+                        border: 1.4px solid #000;
+                    }
+
+                    td {
+                        background-color: #fff;
+                    }
                 }
+
+
             }
 
-            table {
-                margin-top: 50px;
+        }
+
+        .to-top {
+
+            a {
+                padding: 4px 10px;
 
                 border: 3px solid #000;
                 border-radius: 10px;
-                border-collapse: separate;
 
-                th:first-child {
-                    border-radius: 8px 0 0 0;
-                }
+                background-color: #fff;
 
-                th:last-child {
-                    border-radius: 0 8px 0 0;
-                }
+                text-decoration: none;
+                color: #000;
+                font-size: 24px;
+                font-weight: 500;
 
-                tr:last-child td:first-child {
-                    border-radius: 0 0 0 8px;
-                }
-
-                tr:last-child td:last-child {
-                    border-radius: 0 0 8px 0;
-                }
-
-                th,
-                td {
-                    width: 100px;
-                    height: 40px;
-
-                    text-align: center;
-
-                    border: 1.4px solid #000;
-                }
-
-                td {
-                    background-color: #fff;
+                &:hover {
+                    background-color: #44F0EA;
                 }
             }
 
-
         }
-
-    }
-
-    .to-top {
-
-        a {
-            padding: 4px 10px;
-
-            border: 3px solid #000;
-            border-radius: 10px;
-
-            background-color: #fff;
-
-            text-decoration: none;
-            color: #000;
-            font-size: 24px;
-            font-weight: 500;
-
-            &:hover {
-                background-color: #44F0EA;
-            }
-        }
-
     }
 }

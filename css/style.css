@@ -7,32 +7,33 @@ html {
   font-weight: 400, 500;
 }
 
-.all-wrapper {
+.home .all-wrapper {
   width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #f0f0f0;
 }
-.all-wrapper h1 {
+.home .all-wrapper h1 {
   position: absolute;
   top: 50px;
   left: 50px;
   font-size: 64px;
 }
-.all-wrapper .main-wrapper {
+.home .all-wrapper .main-wrapper {
   width: 850px;
   height: auto;
 }
-.all-wrapper .main-wrapper .svg-wrapper {
+.home .all-wrapper .main-wrapper .svg-wrapper {
   width: 100%;
   height: auto;
 }
-.all-wrapper .main-wrapper .svg-wrapper svg {
+.home .all-wrapper .main-wrapper .svg-wrapper svg {
   width: 100%;
   height: auto;
 }
-.all-wrapper .todohuken-block {
+.home .all-wrapper .todohuken-block {
   position: absolute;
   width: 120px;
   display: flex;
@@ -40,7 +41,7 @@ html {
   row-gap: 6px;
   justify-content: space-between;
 }
-.all-wrapper .todohuken-block a {
+.home .all-wrapper .todohuken-block a {
   padding: 6px 10px;
   background-color: #fff;
   border: 3px solid #000;
@@ -50,115 +51,118 @@ html {
   font-size: 16px;
   font-weight: 500;
 }
-.all-wrapper .todohuken-block.hokkaido-block {
+.home .all-wrapper .todohuken-block.hokkaido-block {
   right: 240px;
   top: 220px;
 }
-.all-wrapper .todohuken-block.tohoku-block {
+.home .all-wrapper .todohuken-block.tohoku-block {
   right: 320px;
   top: 380px;
 }
-.all-wrapper .todohuken-block.kanto-block {
+.home .all-wrapper .todohuken-block.kanto-block {
   right: 380px;
   bottom: 80px;
 }
-.all-wrapper .todohuken-block.chubu-block {
+.home .all-wrapper .todohuken-block.chubu-block {
   right: 610px;
   top: 200px;
 }
-.all-wrapper .todohuken-block.kinki-block {
+.home .all-wrapper .todohuken-block.kinki-block {
   right: 780px;
   top: 340px;
 }
-.all-wrapper .todohuken-block.chugoku-block {
+.home .all-wrapper .todohuken-block.chugoku-block {
   left: 400px;
   top: 260px;
 }
-.all-wrapper .todohuken-block.sikoku-block {
+.home .all-wrapper .todohuken-block.sikoku-block {
   left: 520px;
   bottom: 30px;
 }
-.all-wrapper .todohuken-block.kyusyu-block {
+.home .all-wrapper .todohuken-block.kyusyu-block {
   left: 150px;
   bottom: 120px;
 }
-.all-wrapper .todohuken-block.okinawa-block {
+.home .all-wrapper .todohuken-block.okinawa-block {
   left: 280px;
   top: 420px;
 }
-.all-wrapper [data-pref].hovered path {
+.home .all-wrapper [data-pref].hovered path {
   fill: #44F0EA;
 }
-.all-wrapper a[data-pref].hovered {
+.home .all-wrapper a[data-pref].hovered {
   background-color: #44F0EA;
 }
 
-.all-wrapper {
+.pref .all-wrapper {
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   row-gap: 50px;
+  background-color: #f0f0f0;
 }
-.all-wrapper h2 {
+.pref .all-wrapper h2 {
   font-size: 64px;
 }
-.all-wrapper .weather-wrapper {
+.pref .all-wrapper .weather-wrapper {
   display: flex;
   -moz-column-gap: 120px;
        column-gap: 120px;
   font-weight: 500;
 }
-.all-wrapper .weather-wrapper .weather-block .day-wrapper {
+.pref .all-wrapper .weather-wrapper .weather-block .day-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 20px;
 }
-.all-wrapper .weather-wrapper .weather-block .day-wrapper .day-block {
+.pref .all-wrapper .weather-wrapper .weather-block .day-wrapper .day-block {
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 4px;
 }
-.all-wrapper .weather-wrapper .weather-block .day-wrapper .day-block p {
+.pref .all-wrapper .weather-wrapper .weather-block .day-wrapper .day-block p {
   font-size: 20px;
 }
-.all-wrapper .weather-wrapper .weather-block .day-wrapper .day-block h3 {
+.pref .all-wrapper .weather-wrapper .weather-block .day-wrapper .day-block h3 {
   font-size: 36px;
 }
-.all-wrapper .weather-wrapper .weather-block .day-wrapper p {
+.pref .all-wrapper .weather-wrapper .weather-block .day-wrapper p {
   font-size: 24px;
 }
-.all-wrapper .weather-wrapper .weather-block table {
+.pref .all-wrapper .weather-wrapper .weather-block table {
   margin-top: 50px;
   border: 3px solid #000;
   border-radius: 10px;
   border-collapse: separate;
 }
-.all-wrapper .weather-wrapper .weather-block table th:first-child {
+.pref .all-wrapper .weather-wrapper .weather-block table th:first-child {
   border-radius: 8px 0 0 0;
 }
-.all-wrapper .weather-wrapper .weather-block table th:last-child {
+.pref .all-wrapper .weather-wrapper .weather-block table th:last-child {
   border-radius: 0 8px 0 0;
 }
-.all-wrapper .weather-wrapper .weather-block table tr:last-child td:first-child {
+.pref .all-wrapper .weather-wrapper .weather-block table tr:last-child td:first-child {
   border-radius: 0 0 0 8px;
 }
-.all-wrapper .weather-wrapper .weather-block table tr:last-child td:last-child {
+.pref .all-wrapper .weather-wrapper .weather-block table tr:last-child td:last-child {
   border-radius: 0 0 8px 0;
 }
-.all-wrapper .weather-wrapper .weather-block table th,
-.all-wrapper .weather-wrapper .weather-block table td {
+.pref .all-wrapper .weather-wrapper .weather-block table th,
+.pref .all-wrapper .weather-wrapper .weather-block table td {
   width: 100px;
   height: 40px;
   text-align: center;
   border: 1.4px solid #000;
 }
-.all-wrapper .weather-wrapper .weather-block table td {
+.pref .all-wrapper .weather-wrapper .weather-block table td {
   background-color: #fff;
 }
-.all-wrapper .to-top a {
+.pref .all-wrapper .to-top a {
   padding: 4px 10px;
   border: 3px solid #000;
   border-radius: 10px;
@@ -168,6 +172,6 @@ html {
   font-size: 24px;
   font-weight: 500;
 }
-.all-wrapper .to-top a:hover {
+.pref .all-wrapper .to-top a:hover {
   background-color: #44F0EA;
 }/*# sourceMappingURL=style.css.map */
