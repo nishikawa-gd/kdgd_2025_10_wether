@@ -11,6 +11,7 @@ body {
     background-color: #f0f0f0;
 
 
+
     .main-wrapper {
         width: 900px;
         height: auto;
@@ -23,13 +24,13 @@ body {
                 width: 100%;
                 height: auto;
 
-                a {
-                    &:hover {
-                        path {
-                            fill: #44F0EA;
-                        }
-                    }
-                }
+                // a {
+                //     &:hover {
+                //         path {
+                //             fill: #44F0EA;
+                //         }
+                //     }
+                // }
             }
         }
     }
@@ -56,4 +57,15 @@ body {
             }
         }
     }
+
+
+    [data-pref].hovered path {
+        fill: #44F0EA;
+    }
+
+    a[data-pref].hovered {
+        background-color: #44F0EA;
+    }
+
+
 }

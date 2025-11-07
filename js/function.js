@@ -71,3 +71,17 @@ $(function() {
 		renderWeather("tomorrow", tomorrow, data.tomorrow);
 	}
 });
+
+
+
+$(function () {
+  $('[data-pref]').on('mouseenter', function () {
+    const pref = $(this).data('pref');
+    $(`[data-pref="${pref}"]`).addClass('hovered');
+  });
+
+  $('[data-pref]').on('mouseleave', function () {
+    const pref = $(this).data('pref');
+    $(`[data-pref="${pref}"]`).removeClass('hovered');
+  });
+});

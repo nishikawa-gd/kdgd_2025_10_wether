@@ -22,9 +22,6 @@ body .main-wrapper .svg-wrapper svg {
   width: 100%;
   height: auto;
 }
-body .main-wrapper .svg-wrapper svg a:hover path {
-  fill: #44F0EA;
-}
 body .todohuken-wrapper .todohuken-block {
   width: 120px;
   display: flex;
@@ -41,4 +38,10 @@ body .todohuken-wrapper .todohuken-block a {
   color: #000;
   font-size: 16px;
   font-weight: 500;
+}
+body [data-pref].hovered path {
+  fill: #44F0EA;
+}
+body a[data-pref].hovered {
+  background-color: #44F0EA;
 }/*# sourceMappingURL=style.css.map */
