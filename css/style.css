@@ -1,2 +1,5 @@
-body {
+body {}
+
+.st1:hover {
+    fill: red;
 }
