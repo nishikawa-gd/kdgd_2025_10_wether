@@ -7,29 +7,41 @@ html {
   font-weight: 400, 500;
 }
 
-body {
+.all-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #f0f0f0;
 }
-body .main-wrapper {
-  width: 900px;
+.all-wrapper h1 {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  font-size: 64px;
+}
+.all-wrapper .main-wrapper {
+  width: 850px;
   height: auto;
 }
-body .main-wrapper .svg-wrapper {
+.all-wrapper .main-wrapper .svg-wrapper {
   width: 100%;
   height: auto;
 }
-body .main-wrapper .svg-wrapper svg {
+.all-wrapper .main-wrapper .svg-wrapper svg {
   width: 100%;
   height: auto;
 }
-body .todohuken-wrapper .todohuken-block {
+.all-wrapper .todohuken-block {
+  position: absolute;
   width: 120px;
   display: flex;
   flex-wrap: wrap;
   row-gap: 6px;
   justify-content: space-between;
 }
-body .todohuken-wrapper .todohuken-block a {
+.all-wrapper .todohuken-block a {
   padding: 6px 10px;
   background-color: #fff;
   border: 3px solid #000;
@@ -39,9 +51,45 @@ body .todohuken-wrapper .todohuken-block a {
   font-size: 16px;
   font-weight: 500;
 }
-body [data-pref].hovered path {
+.all-wrapper .todohuken-block.hokkaido-block {
+  right: 240px;
+  top: 220px;
+}
+.all-wrapper .todohuken-block.tohoku-block {
+  right: 320px;
+  top: 380px;
+}
+.all-wrapper .todohuken-block.kanto-block {
+  right: 380px;
+  bottom: 80px;
+}
+.all-wrapper .todohuken-block.chubu-block {
+  right: 610px;
+  top: 200px;
+}
+.all-wrapper .todohuken-block.kinki-block {
+  right: 780px;
+  top: 340px;
+}
+.all-wrapper .todohuken-block.chugoku-block {
+  left: 400px;
+  top: 260px;
+}
+.all-wrapper .todohuken-block.sikoku-block {
+  left: 520px;
+  bottom: 30px;
+}
+.all-wrapper .todohuken-block.kyusyu-block {
+  left: 150px;
+  bottom: 120px;
+}
+.all-wrapper .todohuken-block.okinawa-block {
+  left: 280px;
+  top: 420px;
+}
+.all-wrapper [data-pref].hovered path {
   fill: #44F0EA;
 }
-body a[data-pref].hovered {
+.all-wrapper a[data-pref].hovered {
   background-color: #44F0EA;
 }/*# sourceMappingURL=style.css.map */

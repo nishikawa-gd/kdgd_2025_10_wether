@@ -7,13 +7,26 @@ html {
     font-weight: 400, 500;
 }
 
-body {
+.all-wrapper {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     background-color: #f0f0f0;
 
+    h1 {
+        position: absolute;
+        top: 50px;
+        left: 50px;
 
+        font-size: 64px;
+    }
 
     .main-wrapper {
-        width: 900px;
+        width: 850px;
         height: auto;
 
         .svg-wrapper {
@@ -23,39 +36,78 @@ body {
             svg {
                 width: 100%;
                 height: auto;
-
-                // a {
-                //     &:hover {
-                //         path {
-                //             fill: #44F0EA;
-                //         }
-                //     }
-                // }
             }
         }
     }
 
+    .todohuken-block {
+        position: absolute;
 
-    .todohuken-wrapper {
-        .todohuken-block {
-            width: 120px;
-            display: flex;
-            flex-wrap: wrap;
-            row-gap: 6px;
-            justify-content: space-between;
+        width: 120px;
+        display: flex;
 
-            a {
-                padding: 6px 10px;
-                background-color: #fff;
-                border: 3px solid #000;
-                border-radius: 10px;
+        flex-wrap: wrap;
+        row-gap: 6px;
+        justify-content: space-between;
 
-                text-decoration: none;
-                color: #000;
-                font-size: 16px;
-                font-weight: 500;
-            }
+        a {
+            padding: 6px 10px;
+            background-color: #fff;
+            border: 3px solid #000;
+            border-radius: 10px;
+
+            text-decoration: none;
+            color: #000;
+            font-size: 16px;
+            font-weight: 500;
         }
+
+        &.hokkaido-block {
+            right: 240px;
+            top: 220px;
+        }
+
+        &.tohoku-block {
+            right: 320px;
+            top: 380px;
+        }
+
+        &.kanto-block {
+            right: 380px;
+            bottom: 80px;
+        }
+
+        &.chubu-block {
+            right: 610px;
+            top: 200px;
+        }
+
+        &.kinki-block {
+            right: 780px;
+            top: 340px;
+        }
+
+        &.chugoku-block {
+            left: 400px;
+            top: 260px;
+        }
+
+        &.sikoku-block {
+            left: 520px;
+            bottom: 30px;
+        }
+
+        &.kyusyu-block {
+            left: 150px;
+            bottom: 120px;
+        }
+
+         &.okinawa-block {
+            left: 280px;
+            top: 420px;
+        }
+
+
     }
 
 
