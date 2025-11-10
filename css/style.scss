@@ -8,242 +8,333 @@ html {
 }
 
 
+@mixin large {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin middle {
+    @media (max-width: 900px) {
+        @content;
+    }
+}
+
+
 // index
-.home {
-    .all-wrapper {
-        width: 100vw;
-        height: 100vh;
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
+.home-wrapper {
+    width: 100%;
+    height: 100vh;
 
-        background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-        h1 {
-            position: absolute;
-            top: 50px;
-            left: 50px;
+    background-color: #f0f0f0;
+    overflow: hidden;
 
-            font-size: 64px;
+    @include large {
+        height: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    h1 {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+
+        font-size: 64px;
+
+        @include middle {
+            font-size: 40px;
+        }
+    }
+
+    .main-wrapper {
+        position: relative;
+        width: 850px;
+        height: auto;
+
+        @include middle {
+            width: 90%;
         }
 
-        .main-wrapper {
-            width: 850px;
+        .svg-wrapper {
+            width: 100%;
             height: auto;
 
-            .svg-wrapper {
+            svg {
                 width: 100%;
                 height: auto;
+            }
+        }
 
-                svg {
-                    width: 100%;
-                    height: auto;
+
+        .todohuken-wrapper {
+
+            @include large() {
+                margin-top: 50px;
+
+                display: flex;
+                column-gap: 10px;
+            }
+
+            @include middle {
+                flex-direction: column;
+                row-gap: 10px;
+            }
+
+            .todohuken-block {
+                position: absolute;
+
+                width: 120px;
+                display: flex;
+
+                flex-wrap: wrap;
+                row-gap: 6px;
+                justify-content: space-between;
+
+                @include large() {
+                    position: relative;
+
+                    flex-direction: column;
+                    justify-content: start;
+
+                    top: auto !important;
+                    left: auto !important;
+                    right: auto !important;
+                    bottom: auto !important;
                 }
+
+
+                @include middle {
+                    width: 100%;
+
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    column-gap: 10px;
+                    row-gap: 10px;
+                }
+
+                a {
+                    padding: 6px 10px;
+                    background-color: #fff;
+                    border: 3px solid #000;
+                    border-radius: 10px;
+
+                    text-decoration: none;
+                    color: #000;
+                    font-size: 16px;
+                    font-weight: 500;
+                    text-align: center;
+
+                    @include large {
+                        font-size: 18px;
+                    }
+
+                    @include middle {
+                        border: 2px solid #000;
+                    }
+                }
+
+                &.hokkaido-block {
+                    right: -90px;
+                    top: 180px;
+                }
+
+                &.tohoku-block {
+                    right: 0;
+                    top: 340px;
+                }
+
+                &.kanto-block {
+                    right: 60px;
+                    bottom: 60px;
+                }
+
+                &.chubu-block {
+                    right: 320px;
+                    top: 180px;
+                }
+
+                &.kinki-block {
+                    left: 240px;
+                    top: 280px;
+                }
+
+                &.chugoku-block {
+                    left: 80px;
+                    top: 220px;
+                }
+
+                &.sikoku-block {
+                    left: 340px;
+                    bottom: 0;
+                }
+
+                &.kyusyu-block {
+                    left: -160px;
+                    bottom: 60px;
+                }
+
+                &.okinawa-block {
+                    left: -40px;
+                    top: 360px;
+                }
+
             }
         }
-
-        .todohuken-block {
-            position: absolute;
-
-            width: 120px;
-            display: flex;
-
-            flex-wrap: wrap;
-            row-gap: 6px;
-            justify-content: space-between;
-
-            a {
-                padding: 6px 10px;
-                background-color: #fff;
-                border: 3px solid #000;
-                border-radius: 10px;
-
-                text-decoration: none;
-                color: #000;
-                font-size: 16px;
-                font-weight: 500;
-            }
-
-            &.hokkaido-block {
-                right: 240px;
-                top: 220px;
-            }
-
-            &.tohoku-block {
-                right: 320px;
-                top: 380px;
-            }
-
-            &.kanto-block {
-                right: 380px;
-                bottom: 80px;
-            }
-
-            &.chubu-block {
-                right: 610px;
-                top: 200px;
-            }
-
-            &.kinki-block {
-                right: 780px;
-                top: 340px;
-            }
-
-            &.chugoku-block {
-                left: 400px;
-                top: 260px;
-            }
-
-            &.sikoku-block {
-                left: 520px;
-                bottom: 30px;
-            }
-
-            &.kyusyu-block {
-                left: 150px;
-                bottom: 120px;
-            }
-
-            &.okinawa-block {
-                left: 280px;
-                top: 420px;
-            }
-
-
-        }
-
-
-        [data-pref].hovered path {
-            fill: #44F0EA;
-        }
-
-        a[data-pref].hovered {
-            background-color: #44F0EA;
-        }
-
 
     }
+
+
+    [data-pref].hovered path {
+        fill: #44F0EA;
+    }
+
+    .todohuken-block a[data-pref].hovered {
+        background-color: #44F0EA;
+    }
+
+
 }
 
 
 
 
 // pref
-.pref {
-    .all-wrapper {
-        width: 100vw;
-        height: 100vh;
+
+.pref-wrapper {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 50px;
+
+    background-color: #f0f0f0;
+    overflow: hidden;
+
+    @include middle {
+        height: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    h2 {
+        font-size: 64px;
+    }
+
+    .weather-wrapper {
 
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        row-gap: 50px;
+        column-gap: 80px;
 
-        background-color: #f0f0f0;
+        font-weight: 500;
 
-        h2 {
-            font-size: 64px;
+        @include large {
         }
 
-        .weather-wrapper {
+        @include middle {
+            flex-direction: column;
+            justify-content: center;
+            row-gap: 50px;
+            column-gap: 0;
+        }
 
-            display: flex;
-            column-gap: 120px;
+        .weather-block {
+            .day-wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 20px;
 
-            font-weight: 500;
-
-            .weather-block {
-                .day-wrapper {
+                .day-block {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    row-gap: 20px;
-
-                    .day-block {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        row-gap: 4px;
-
-                        p {
-                            font-size: 20px;
-                        }
-
-                        h3 {
-                            font-size: 36px;
-                        }
-                    }
+                    row-gap: 4px;
 
                     p {
-                        font-size: 24px;
+                        font-size: 20px;
+                    }
+
+                    h3 {
+                        font-size: 36px;
                     }
                 }
 
-                table {
-                    margin-top: 50px;
-
-                    border: 3px solid #000;
-                    border-radius: 10px;
-                    border-collapse: separate;
-
-                    th:first-child {
-                        border-radius: 8px 0 0 0;
-                    }
-
-                    th:last-child {
-                        border-radius: 0 8px 0 0;
-                    }
-
-                    tr:last-child td:first-child {
-                        border-radius: 0 0 0 8px;
-                    }
-
-                    tr:last-child td:last-child {
-                        border-radius: 0 0 8px 0;
-                    }
-
-                    th,
-                    td {
-                        width: 100px;
-                        height: 40px;
-
-                        text-align: center;
-
-                        border: 1.4px solid #000;
-                    }
-
-                    td {
-                        background-color: #fff;
-                    }
+                p {
+                    font-size: 24px;
                 }
-
-
             }
 
-        }
-
-        .to-top {
-
-            a {
-                padding: 4px 10px;
+            table {
+                margin-top: 50px;
 
                 border: 3px solid #000;
                 border-radius: 10px;
+                border-collapse: separate;
 
-                background-color: #fff;
+                th:first-child {
+                    border-radius: 8px 0 0 0;
+                }
 
-                text-decoration: none;
-                color: #000;
-                font-size: 24px;
-                font-weight: 500;
+                th:last-child {
+                    border-radius: 0 8px 0 0;
+                }
 
-                &:hover {
-                    background-color: #44F0EA;
+                tr:last-child td:first-child {
+                    border-radius: 0 0 0 8px;
+                }
+
+                tr:last-child td:last-child {
+                    border-radius: 0 0 8px 0;
+                }
+
+                th,
+                td {
+                    width: 100px;
+                    height: 40px;
+
+                    text-align: center;
+
+                    border: 1.4px solid #000;
+                }
+
+                td {
+                    background-color: #fff;
                 }
             }
 
+
         }
+
+    }
+
+    .to-top {
+
+        a {
+            padding: 4px 10px;
+
+            border: 3px solid #000;
+            border-radius: 10px;
+
+            background-color: #fff;
+
+            text-decoration: none;
+            color: #000;
+            font-size: 24px;
+            font-weight: 500;
+
+            &:hover {
+                background-color: #44F0EA;
+            }
+        }
+
     }
 }
