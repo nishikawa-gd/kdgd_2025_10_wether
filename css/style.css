@@ -1,5 +1,16 @@
 body {}
 
-.st1:hover {
+rect:hover {
     fill: red;
+    transition: 0.2s;
+}
+
+polyline:hover {
+    fill: red;
+    transition: 0.2s;
+}
+
+polygon:hover {
+    fill: red;
+    transition: 0.2s;
 }
