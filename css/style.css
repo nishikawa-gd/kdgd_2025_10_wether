@@ -1,2 +1,63 @@
 body {
 }
+.topmap {
+   width: 720px;
+   margin: 0 auto;
+}
+.topmap img {
+   width: 100%;
+   height: auto;
+}
+
+h1 {
+   margin-top: 50px;
+   margin-left: 50px;
+   font-size: 30px;
+   font-family: ヒラギノ丸ゴ ProN W4;
+   color: red;
+}
+
+.js-pref-name {
+   margin-top: 100px;
+   font-size: 30px;
+   text-align: center;
+}
+
+.main {
+   display: flex;
+   justify-content: center;
+   margin-top: 100px;
+   column-gap: 50px;
+   line-height: 2;
+}
+
+.today-weather  {
+   background-color: aliceblue;
+   padding: 30px;
+   border-radius: 30px;
+}
+
+.tomorrow-weather {
+   background-color: aliceblue;
+   padding: 30px;
+   border-radius: 30px;
+}
+
+.last {
+   margin-top: 50px;
+}
+
+.link {
+   text-decoration: none;
+   color: black;
+   margin-left: 650px;
+   background-color: #ccc;
+   padding: 10px;
+   border-radius: 10px;
+}
+
+.link:hover {
+   background-color: red;
+   color:#fff;
+   transition: 0.5s ease-in-out;
+}

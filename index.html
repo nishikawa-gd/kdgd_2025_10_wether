@@ -13,57 +13,59 @@
 </head>
 <body class="home">
   <h1>日本の天気予報</h1>
-  <div>
-    <img src="japan-map.png" alt="日本地図で各都道府県を選択したらページ移動できるようにする">
+  <div class="topmap">
+    <img src="img/map 1.png" alt="日本地図で各都道府県を選択したらページ移動できるようにする" usemap="#image-map">
+    <map name="image-map">
+       <area target="_blank" alt="北海道" title="北海道" href="pref.html?pref=北海道" coords="612,109,610,4,727,4,724,89,663,88,660,109" shape="poly">
+       <area target="_blank" alt="青森" title="青森" href="pref.html?pref=青森" coords="614,151,613,127,674,125,680,114,717,112,716,152" shape="poly">
+       <area target="_blank" alt="岩手" title="岩手" href="pref.html?pref=岩手" coords="668,185,669,157,715,158,715,186" shape="poly">
+       <area target="_blank" alt="秋田" title="秋田" href="pref.html?pref=秋田" coords="614,187,615,161,664,160,663,187" shape="poly">
+       <area target="_blank" alt="宮城" title="宮城" href="pref.html?pref=宮城" coords="667,219,667,196,715,194,718,219" shape="poly">
+       <area target="_blank" alt="山形" title="山形" href="ref.html?pref=山形" coords="615,216,614,191,660,192,662,216" shape="poly">
+       <area target="_blank" alt="福島" title="福島" href="pref.html?pref=福島" coords="613,248,614,226,716,224,717,249" shape="poly">
+       <area target="_blank" alt="茨城" title="茨城" href="pref.html?pref=茨城" coords="666,314,667,289,715,290,716,314" shape="poly">
+       <area target="_blank" alt="栃木" title="栃木" href="pref.html?pref=栃木" coords="671,282,670,260,716,256,716,282" shape="poly">
+       <area target="_blank" alt="群馬" title="群馬" href="pref.html?pref=群馬" coords="615,281,614,258,660,257,663,283" shape="poly">
+       <area target="_blank" alt="埼玉" title="埼玉" href="pref.html?pref=埼玉" coords="616,314,615,290,662,290,662,316" shape="poly">
+       <area target="" alt="千葉" title="千葉" href="pref.html?pref=千葉" coords="670,378,668,322,717,320,716,377" shape="poly">
+       <area target="_blank" alt="東京" title="東京" href="pref.html?pref=東京" coords="614,348,615,322,661,321,662,347" shape="poly">
+       <area target="_blank" alt="神奈川" title="神奈川" href="pref.html?pref=神奈川" coords="613,379,615,356,662,356,662,378" shape="poly">
+       <area target="_blank" alt="新潟" title="新潟" href="pref.html?pref=新潟" coords="560,250,560,224,608,224,608,250" shape="poly">
+       <area target="_blank" alt="富山" title="富山" href="pref.html?pref=富山" coords="505,250,506,224,556,223,555,250" shape="poly">
+       <area target="_blank" alt="石川" title="石川" href="pref.html?pref=石川" coords="451,249,452,225,499,224,500,249" shape="poly">
+       <area target="_blank" alt="福井" title="福井" href="pref.html?pref=福井" coords="451,285,452,258,499,260,501,284" shape="poly">
+       <area target="_blank" alt="山梨" title="山梨" href="pref.html?pref=山梨" coords="561,346,561,323,606,321,607,346" shape="poly">
+       <area target="_blank" alt="長野" title="長野" href="pref.html?pref=長野" coords="559,313,559,258,608,258,607,311" shape="poly">
+       <area target="_blank" alt="岐阜" title="岐阜" href="pref.html?pref=岐阜" coords="506,316,506,255,554,254,555,315" shape="poly">
+       <area target="_blank" alt="静岡" title="静岡" href="pref.html?pref=静岡" coords="560,378,560,351,607,351,609,378" shape="poly">
+       <area target="_blank" alt="愛知" title="愛知" href="pref.html?pref=愛知" coords="505,347,505,319,555,319,555,348" shape="poly">
+       <area target="_blank" alt="三重" title="三重" href="pref.html?pref=三重" coords="452,346,451,318,500,319,500,347" shape="poly">
+        <area target="_blank" alt="滋賀" title="滋賀" href="pref.html?pref=滋賀" coords="450,315,450,287,501,287,501,315" shape="poly">
+        <area target="_blank" alt="京都" title="京都" href="pref.html?pref=京都" coords="396,313,397,287,445,287,446,314" shape="poly">
+        <area target="_blank" alt="大阪" title="大阪" href="pref.html?pref=大阪" coords="343,347,343,319,392,320,394,348" shape="poly">
+        <area target="_blank" alt="兵庫" title="兵庫" href="pref.html?pref=兵庫" coords="344,314,342,287,392,287,393,316" shape="poly">
+        <area target="_blank" alt="奈良" title="奈良" href="pref.html?pref=奈良" coords="398,346,398,320,446,319,446,346" shape="poly">
+        <area target="_blank" alt="和歌山" title="和歌山" href="pref.html?pref=和歌山" coords="344,381,343,350,447,351,446,382" shape="poly">
+        <area target="_blank" alt="鳥取" title="鳥取" href="pref.html?pref=鳥取" coords="288,316,288,288,339,288,339,315" shape="poly">
+        <area target="_blank" alt="島根" title="島根" href="pref.html?pref=島根" coords="235,315,236,286,286,287,283,315" shape="poly">
+        <area target="_blank" alt="岡山" title="岡山" href="pref.html?pref=岡山" coords="290,347,289,321,339,321,340,348" shape="poly">
+        <area target="_blank" alt="広島" title="広島" href="pref.html?pref=広島" coords="236,348,235,321,285,319,284,349" shape="poly">
+        <area target="_blank" alt="山口" title="山口" href="pref.html?pref=山口" coords="181,348,180,287,229,288,231,346" shape="poly">
+        <area target="_blank" alt="徳島" title="徳島" href="pref.html?pref=徳島" coords="257,417,256,389,306,389,305,417" shape="poly">
+        <area target="_blank" alt="香川" title="香川" href="pref.html?pref=香川" coords="256,384,255,358,307,355,307,381" shape="poly">
+        <area target="_blank" alt="愛媛" title="愛媛" href="pref.html?pref=愛媛" coords="201,384,201,353,250,354,250,383" shape="poly">
+        <area target="_blank" alt="高知" title="高知" href="pref.html?pref=高知" coords="202,415,202,387,251,387,251,415" shape="poly">
+        <area target="_blank" alt="福岡" title="福岡" href="pref.html?pref=福岡" coords="63,315,63,285,113,286,112,314" shape="poly">
+        <area target="_blank" alt="佐賀" title="佐賀" href="pref.html?pref=佐賀" coords="10,315,9,286,60,286,59,315" shape="poly">
+        <area target="_blank" alt="長崎" title="長崎" href="pref.html?pref=長崎" coords="8,345,8,319,60,320,58,348" shape="poly">
+        <area target="_blank" alt="熊本" title="熊本" href="pref.html?pref=熊本" coords="64,347,64,318,112,318,114,345" shape="poly">
+        <area target="_blank" alt="大分" title="大分" href="pref.html?pref=大分" coords="117,314,117,285,167,285,167,314" shape="poly">
+        <area target="_blank" alt="宮崎" title="宮崎" href="pref.html?pref=宮崎" coords="116,379,116,317,167,318,168,381" shape="poly">
+        <area target="_blank" alt="鹿児島" title="鹿児島" href="pref.html?pref=鹿児島" coords="10,379,9,351,112,351,112,378" shape="poly">
+        <area target="_blank" alt="沖縄" title="沖縄" href="pref.html?pref=沖縄" coords="10,428,11,399,58,399,60,430" shape="poly">
+       <area target="" alt="" title="" href="" coords="" shape="0">
+    </map>
   </div>
   <div>
-    <a href="pref.html?pref=北海">北海道</a>
-    <a href="pref.html?pref=青森">青森県</a>
-    <a href="pref.html?pref=岩手">岩手県</a>
-    <a href="pref.html?pref=宮城">宮城県</a>
-    <a href="pref.html?pref=秋田">秋田県</a>
-    <a href="pref.html?pref=山形">山形県</a>
-    <a href="pref.html?pref=福島">福島県</a>
-    <a href="pref.html?pref=茨城">茨城県</a>
-    <a href="pref.html?pref=栃木">栃木県</a>
-    <a href="pref.html?pref=群馬">群馬県</a>
-    <a href="pref.html?pref=埼玉">埼玉県</a>
-    <a href="pref.html?pref=千葉">千葉県</a>
-    <a href="pref.html?pref=東京">東京都</a>
-    <a href="pref.html?pref=神奈川">神奈川県</a>
-    <a href="pref.html?pref=新潟">新潟県</a>
-    <a href="pref.html?pref=富山">富山県</a>
-    <a href="pref.html?pref=石川">石川県</a>
-    <a href="pref.html?pref=福井">福井県</a>
-    <a href="pref.html?pref=山梨">山梨県</a>
-    <a href="pref.html?pref=長野">長野県</a>
-    <a href="pref.html?pref=岐阜">岐阜県</a>
-    <a href="pref.html?pref=静岡">静岡県</a>
-    <a href="pref.html?pref=愛知">愛知県</a>
-    <a href="pref.html?pref=三重">三重県</a>
-    <a href="pref.html?pref=滋賀">滋賀県</a>
-    <a href="pref.html?pref=京都">京都府</a>
-    <a href="pref.html?pref=大阪">大阪府</a>
-    <a href="pref.html?pref=兵庫">兵庫県</a>
-    <a href="pref.html?pref=奈良">奈良県</a>
-    <a href="pref.html?pref=和歌山">和歌山県</a>
-    <a href="pref.html?pref=鳥取">鳥取県</a>
-    <a href="pref.html?pref=島根">島根県</a>
-    <a href="pref.html?pref=岡山">岡山県</a>
-    <a href="pref.html?pref=広島">広島県</a>
-    <a href="pref.html?pref=山口">山口県</a>
-    <a href="pref.html?pref=徳島">徳島県</a>
-    <a href="pref.html?pref=香川">香川県</a>
-    <a href="pref.html?pref=愛媛">愛媛県</a>
-    <a href="pref.html?pref=高知">高知県</a>
-    <a href="pref.html?pref=福岡">福岡県</a>
-    <a href="pref.html?pref=佐賀">佐賀県</a>
-    <a href="pref.html?pref=長崎">長崎県</a>
-    <a href="pref.html?pref=熊本">熊本県</a>
-    <a href="pref.html?pref=大分">大分県</a>
-    <a href="pref.html?pref=宮崎">宮崎県</a>
-    <a href="pref.html?pref=鹿児島">鹿児島県</a>
-    <a href="pref.html?pref=沖縄">沖縄県</a>
-  </div>
 </body>
 </html>
