@@ -1,4 +1,20 @@
-body {}
+body {
+    position: relative;
+}
+
+h1 {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    font-size: 50px;
+}
+
+svg {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 
 rect:hover {
     fill: red;
