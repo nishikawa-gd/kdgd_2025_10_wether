@@ -1,4 +1,7 @@
+
+
 $(function() {
+
 
 	// bodyにhomeクラスがある場合の処理
 	if ($('body').hasClass('pref')) {
